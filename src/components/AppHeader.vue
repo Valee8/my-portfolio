@@ -1,14 +1,17 @@
 <script>
+import AppNav from './AppNav.vue'
+
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  components: {
+    AppNav
+  }
 }
 </script>
 
 <template>
   <header>
-    <h1>
-      Sono un header
-    </h1>
+    <AppNav />
   </header>
 </template>
 
