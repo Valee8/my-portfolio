@@ -4,12 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #16203a;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
 img {
     max-width: 100%;
 }
 
 a {
     text-decoration: none;
+    color: #4adb72;
 }
 
 ul {
