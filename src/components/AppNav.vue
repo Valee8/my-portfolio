@@ -59,7 +59,7 @@ export default {
             <ul class="nav-socials">
                 <li v-for="(socials, index) in navSocials" :key="index">
                     <a :href="socials.link">
-                        <i :class="socials.icon"></i> {{ socials.text }}
+                        <i :class="socials.icon" class="icon-socials"></i> {{ socials.text }}
                     </a>
                 </li>
             </ul>
@@ -76,19 +76,22 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #111111;
-    width: 180px;
-    height: 600px;
+    width: 230px;
     font-weight: 300;
-
-    a {
-        font-size: 0.85rem;
-
-    }
+    font-size: 0.85rem;
+    padding: 15px 0;
 
     div {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &.top-nav {
+            width: 125px;
+            align-self: flex-end;
+            text-align: right;
+            padding-right: 20px;
+        }
 
         &:nth-child(2) {
             flex-grow: 1;
@@ -103,17 +106,24 @@ nav {
                     line-height: 40px;
                     border-bottom: 1px solid #1d1d1d;
 
-                    a {
-                        //width: 100%;
-                        //display: block;
-                        color: #bbbbbb;
+                    &:last-child {
+                        border-bottom: 0;
                     }
                 }
             }
         }
 
-        &:nth-child(3) {
-            align-items: flex-end;
+        .nav-socials {
+            li {
+                padding: 5px 0;
+                font-size: 0.9rem;
+
+                .icon-socials {
+                    font-size: 1.2rem;
+                    vertical-align: middle;
+                    padding-right: 6px;
+                }
+            }
         }
     }
 
