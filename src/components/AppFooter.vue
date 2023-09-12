@@ -1,18 +1,14 @@
 <script>
-import AppNav from './AppNav.vue'
 
 export default {
-  name: 'AppHeader',
-  components: {
-    AppNav
-  }
+  name: 'AppFooter'
 }
 </script>
 
 <template>
-  <header>
-    <AppNav />
-  </header>
+  <footer>
+    Footer
+  </footer>
 </template>
 
 <style lang="scss" scoped>
