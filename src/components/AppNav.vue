@@ -1,30 +1,65 @@
 <script>
 export default {
-    name: 'AppNav'
+    name: 'AppNav',
+    data() {
+        return {
+            navLinks: [
+                {
+                    text: "Projects",
+                    link: "#"
+                },
+                {
+                    text: "Skills",
+                    link: "#"
+                },
+                {
+                    text: "Experience",
+                    link: "#"
+                },
+                {
+                    text: "Contact",
+                    link: "#"
+                }
+            ],
+            navSocials: [
+                {
+                    text: "Linkedin",
+                    link: "",
+                    icon: "fa-brands fa-linkedin"
+                },
+                {
+                    text: "GitHub",
+                    link: "",
+                    icon: "fa-brands fa-github"
+                }
+            ]
+        }
+    }
 }
 </script>
 
 <template>
     <nav>
-        <div class="container">
-            <h1>
-                Logo
-            </h1>
+        <div class="top-nav">
+            Jr. Full Stack Web Developer
+        </div>
 
+        <div class="center-nav">
             <ul class="nav-links">
-                <li>
-                    <a href="#">
-                        About
+                <li v-for="(links, index) in navLinks" :key="index">
+                    <a :href="links.link">
+                        {{ links.text }}
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contacts
+
+            </ul>
+        </div>
+
+        <div class="bottom-nav">
+            <ul class="nav-socials">
+                <li v-for="(socials, index) in navSocials" :key="index">
+                    <a :href="socials.link">
+                        <i :class="socials.icon"></i> {{ socials.text }}
                     </a>
                 </li>
             </ul>
@@ -38,20 +73,61 @@ export default {
 @use '../src/styles/partials/variables' as *;
 
 nav {
-    background-color: rgba(0, 0, 0, .2);
-    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    width: 150px;
+    height: 600px;
+    font-weight: 300;
 
-    .container {
+    a {
+        font-size: 0.85rem;
+
+    }
+
+    div {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
+        &:nth-child(2) {
+            flex-grow: 1;
+
+            .nav-links {
+                width: 100%;
+
+                li {
+                    margin: 0 4px;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                    border-bottom: 1px solid #1d1d1d;
+
+                    a {
+                        //width: 100%;
+                        //display: block;
+                        color: #bbbbbb;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            align-items: flex-end;
         }
     }
+
+    // .container {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+
+    //     .nav-links {
+    //         display: flex;
+    //         justify-content: space-between;
+    //         align-items: center;
+    //         gap: 20px;
+    //     }
+    // }
 }
 </style>
