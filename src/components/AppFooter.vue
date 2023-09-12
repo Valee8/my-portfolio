@@ -7,7 +7,9 @@ export default {
 
 <template>
   <footer>
-    Footer
+    <div class="container">
+      <!-- Footer -->
+    </div>
   </footer>
 </template>
 
