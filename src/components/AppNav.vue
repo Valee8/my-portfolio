@@ -76,7 +76,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #111111;
-    width: 150px;
+    width: 180px;
     height: 600px;
     font-weight: 300;
 
