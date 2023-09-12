@@ -17,10 +17,13 @@ export default {
   <div id="main-container">
     <AppNav />
 
-    <div class="main">
+    <div class="main-footer">
       <main>
-        <AppMain />
+        <div class="container">
+          <AppMain />
+        </div>
       </main>
+
       <AppFooter />
     </div>
   </div>
@@ -33,9 +36,14 @@ export default {
 
 #main-container {
   display: flex;
+  height: 100vh;
 
-  .main {
-    width: calc(100% - 100px);
+  .main-footer {
+    width: calc(100% - 230px);
+
+    main {
+      padding-top: 100px;
+    }
   }
 }
 </style>
