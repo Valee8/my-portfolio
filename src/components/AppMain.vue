@@ -1,13 +1,16 @@
 <script>
+import Presentation from './Presentation.vue';
+
 export default {
     name: 'AppMain',
+    components: {
+        Presentation
+    }
 }
 </script>
 
 <template>
-    <h1>
-        Sono il main
-    </h1>
+    <Presentation />
 </template>
 
 <style lang="scss" scoped>
