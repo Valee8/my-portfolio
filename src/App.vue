@@ -1,19 +1,41 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue';
+import AppMain from './components/AppMain.vue';
+import AppNav from './components/AppNav.vue';
+
 
 export default {
   components: {
-    AppHeader,
+    AppFooter,
+    AppMain,
+    AppNav
   }
 }
 </script>
 
 <template>
-  <AppHeader />
+  <div id="main-container">
+    <AppNav />
+
+    <div class="main">
+      <main>
+        <AppMain />
+      </main>
+      <AppFooter />
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
 @use '../src/styles/general.scss' as *;
 @use '../src/styles/partials/mixins' as *;
 @use '../src/styles/partials/variables' as *;
+
+#main-container {
+  display: flex;
+
+  .main {
+    width: calc(100% - 100px);
+  }
+}
 </style>
