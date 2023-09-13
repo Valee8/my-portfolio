@@ -14,7 +14,7 @@ export default {
                 },
                 {
                     text: "Experience",
-                    link: "#"
+                    link: "#experience"
                 },
                 {
                     text: "Contact",
