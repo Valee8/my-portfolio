@@ -2,13 +2,15 @@
 import Presentation from './Presentation.vue';
 import Projects from './Projects.vue';
 import Skills from './Skills.vue';
+import Experience from './Experience.vue';
 
 export default {
     name: 'AppMain',
     components: {
         Presentation,
         Projects,
-        Skills
+        Skills,
+        Experience
     }
 }
 </script>
@@ -17,6 +19,7 @@ export default {
     <Presentation />
     <Projects />
     <Skills />
+    <Experience />
 </template>
 
 <style lang="scss" scoped>
