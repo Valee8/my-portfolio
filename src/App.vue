@@ -36,14 +36,9 @@ export default {
 
 #main-container {
   display: flex;
-  height: 100vh;
 
   .main-footer {
     width: calc(100% - 230px);
-
-    main {
-      padding-top: 100px;
-    }
   }
 }
 </style>
