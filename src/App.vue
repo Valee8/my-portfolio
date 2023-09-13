@@ -39,6 +39,10 @@ export default {
 
   .main-footer {
     width: calc(100% - 230px);
+
+    main {
+      padding-top: 70px;
+    }
   }
 }
 </style>
