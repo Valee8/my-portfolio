@@ -69,7 +69,7 @@ section {
         width: 28%;
 
         h2 {
-            height: calc(100% - 30px);
+            height: calc(100% - 39px);
         }
     }
 
@@ -83,6 +83,7 @@ section {
             width: 480px;
             border-radius: 4px;
             padding: 40px;
+            height: calc(100% / 3 - 10px);
 
             h3 {
                 font-size: 1.8rem;
