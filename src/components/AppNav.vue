@@ -6,11 +6,11 @@ export default {
             navLinks: [
                 {
                     text: "Projects",
-                    link: "#"
+                    link: "#projects"
                 },
                 {
                     text: "Skills",
-                    link: "#"
+                    link: "#skills"
                 },
                 {
                     text: "Experience",
@@ -77,7 +77,7 @@ nav {
     flex-direction: column;
     background-color: #111111;
     width: 230px;
-    font-weight: 300;
+    height: 100vh;
     font-size: 0.85rem;
     padding: 15px 0;
 
