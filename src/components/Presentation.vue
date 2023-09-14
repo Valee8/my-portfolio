@@ -74,7 +74,12 @@ section {
             padding-top: 50px;
 
             .button {
-                padding: 13px 30px;
+                //padding: 13px 30px;
+                width: 200px;
+                height: 60px;
+                display: inline-block;
+                text-align: center;
+                line-height: 60px;
                 border-radius: 5px;
                 background-color: rgba(255, 255, 255, .05);
                 font-weight: 300;
