@@ -18,7 +18,7 @@ export default {
                 },
                 {
                     text: "Contact",
-                    link: "#"
+                    link: "#contact"
                 }
             ],
             navSocials: [
